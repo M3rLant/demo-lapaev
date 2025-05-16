@@ -42,7 +42,7 @@ $(document).ready(function () {
 
   $("#register-form").on("submit", function (event) {
     event.preventDefault();
-    const fio = $("#register-fio").val();
+    const fio = $("#register-fio").val() + $("#register-name").val() + $("#register-middlename").val();
     const tel = $("#register-tel").val();
     const email = $("#register-email").val();
     const username = $("#register-username").val();
